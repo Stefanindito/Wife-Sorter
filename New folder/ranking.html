@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Ranking</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="ranking-container">
+  <h2>Member Ranking</h2>
+  <div class="ranking" id="ranking"></div>
+</div>
+
+<script>
+const memberRanking = document.getElementById("ranking");
+
+if (selectedMember === 1) {
+  memberRanking.innerHTML = "<p>1. Member 1</p><p>2. Member 2</p><p>3. Member 3</p><p>4. Member 4</p>";
+} else if (selectedMember === 2) {
+  memberRanking.innerHTML = "<p>1. Member 2</p><p>2. Member 1</p><p>3. Member 3</p><p>4. Member 4</p>";
+} else {
+  // Handle jika tidak ada member yang dipilih
+  memberRanking.innerHTML = "<p>Tidak ada member yang dipilih</p>";
+}
+</script>
+
+</body>
+</html>

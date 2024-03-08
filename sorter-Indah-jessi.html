@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorter Kecil-kecilan</title>
+    <style>
+        body {
+            margin: 0; /* Hilangkan margin */
+            padding: 0; /* Hilangkan padding */
+          }
+        header {
+          background-color: #ff7676; /* Warna latar belakang header */
+          color: #fff; /* Warna teks header */
+          padding: 20px; /* Padding untuk isi header */
+          text-align: center; /* Posisi teks menjadi tengah */
+          border-bottom: 1px solid #ffa5a5; /* Garis bawah header */
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); /* Bayangan di bawah header */
+        }
+        header a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .container-text-atas{
+            display: flex;
+            justify-content: center;
+            color: rgb(160, 160, 160);
+      
+        }
+        .fontatas {
+            font-family: "Yanone Kaffeesatz", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+          }
+          .images{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+          }
+
+          
+          .member {
+            margin: 0 10px;
+            text-align: center;
+          }
+          
+          .member img {
+            width: 300px;
+            
+            border-radius: 20%;
+          }
+          .tie{
+            display: flex;
+            justify-content: center;
+
+          }
+          .tie button{
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: #fff;
+            border: 2px solid #dc3545;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+            transition: background-color 0.3s, color 0.3s;
+          }
+          .btn:hover {
+            background-color: #fff;
+            color: #dc3545;
+            transform: scale(1.1);
+          }
+          #hasil {
+            margin-top: 20px;
+            color: #c90000;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+          }
+          
+      </style>
+</head>
+<body>
+    <header>
+        <a href="sorter.html"><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">WIFE SORTER</h1></a>
+    </header>
+    <div class="container-text-atas">
+<h2 class="fontatas">CHOOSE YOUR DESTINY</h2>
+    </div>
+    <div class="images">
+        <div class="member" id="member1">
+            <a href="sorter-Indah-Rin.html"><img src="member1.jpg" alt="Member 1"></a>
+            <h2>Indah Cahya Nabila</h2>
+            <br>
+            
+          </div>
+          <h2 style="color: rgb(160, 160, 160);">OR</h2>
+          <div class="member" id="member2">
+            
+            <a href="sorter-Eli-jessi.html"><img src="member5.jpg" alt="Member 3"></a>
+            <h2>Jessica Chandra</h2>
+            <br>
+            
+          </div>
+    </div>
+    <div id="hasil"></div>
+    <div class="tie">
+        <button type="button" onclick="tampilkanTulisan('HARUS DIPILIH SAT!')">TIE!</button>
+    </div>
+    
+
+<div style="display: flex; justify-content:center; font-size:small; margin-top:20px;">
+  INSPIRED BY Rebornian48 Member Sorter
+</div>
+    <script>
+        function tampilkanTulisan(tulisan) {
+            document.getElementById("hasil").innerText = tulisan;
+          }
+    </script>
+</body>
+</html>
